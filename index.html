@@ -1,69 +1,89 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Botu Kebab - Shaorma Master</title>
+<title>Botu Kebab Simulator</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
 
-<div id="menu">
+<div id="game">
+
+
+<header>
 
 <h1>🌯 Botu Kebab</h1>
 
-<h2>Construiește Shaorma</h2>
-
-<button id="startBtn">
-START JOC
-</button>
-
+<div id="money">
+💰 0 lei
 </div>
 
+</header>
 
 
-<div id="gameArea">
 
-<div id="hud">
-💰 Bani: <span id="money">0</span>
-</div>
+<main>
 
 
-<div id="shaorma">
+<div id="masa">
 
+
+<div id="lipie">
 🫓
+</div>
+
 
 </div>
 
 
-<div id="buttons">
 
-<button onclick="addIngredient('🍖')">
-Carne
+<div id="ingrediente">
+
+
+<button onclick="adauga('🍗')">
+🍗 Carne
 </button>
 
-<button onclick="addIngredient('🥬')">
-Salată
+
+<button onclick="adauga('🥬')">
+🥬 Salată
 </button>
 
-<button onclick="addIngredient('🍅')">
-Roșii
+
+<button onclick="adauga('🍅')">
+🍅 Roșii
 </button>
 
-<button onclick="addIngredient('🥫')">
-Sos
+
+<button onclick="adauga('🧅')">
+🧅 Ceapă
 </button>
 
-<button onclick="finish()">
-🌯 Servește
+
+<button onclick="adauga('🥫')">
+🥫 Sos
 </button>
+
+
+<button onclick="gata()">
+🌯 Rulează
+</button>
+
 
 </div>
+
+
+</main>
+
 
 
 </div>
@@ -72,5 +92,7 @@ Sos
 
 <script src="game.js"></script>
 
+
 </body>
+
 </html>
