@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Botu Kebab - Shaorma Master</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<div id="menu">
+
+<h1>🌯 Botu Kebab</h1>
+
+<h2>Construiește Shaorma</h2>
+
+<button id="startBtn">
+START JOC
+</button>
+
+</div>
+
+
+
+<div id="gameArea">
+
+<div id="hud">
+💰 Bani: <span id="money">0</span>
+</div>
+
+
+<div id="shaorma">
+
+🫓
+
+</div>
+
+
+<div id="buttons">
+
+<button onclick="addIngredient('🍖')">
+Carne
+</button>
+
+<button onclick="addIngredient('🥬')">
+Salată
+</button>
+
+<button onclick="addIngredient('🍅')">
+Roșii
+</button>
+
+<button onclick="addIngredient('🥫')">
+Sos
+</button>
+
+<button onclick="finish()">
+🌯 Servește
+</button>
+
+</div>
+
+
+</div>
+
+
+
+<script src="game.js"></script>
+
+</body>
+</html>
